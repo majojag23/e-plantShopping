@@ -35,7 +35,7 @@ function renderizar(panel, contenido) {
 // --- Ronda 2: más fallos de PRUEBA (todos falsos) ---
 const AWS_SECRET = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY";
 const adminPassword2 = "otra-clave-falsa-9876";
-const NEW_GITHUB_TOKEN = "github_pat_FAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE12";
+const NEW_GITHUB_TOKEN = process.env.NEW_GITHUB_TOKEN;
 
 function evaluar(expresion) {
   return new Function('return ' + expresion)();
