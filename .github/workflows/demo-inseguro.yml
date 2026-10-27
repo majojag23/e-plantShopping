@@ -1,0 +1,10 @@
+# Flujo de PRUEBA de DevSentinel. Solo se puede lanzar a mano: nunca corre solo con un PR.
+# Riesgo que se quiere mostrar: on: pull_request_target
+name: Demo inseguro
+on: workflow_dispatch
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - run: echo "${{ github.event.pull_request.title }}"
