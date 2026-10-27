@@ -38,7 +38,7 @@ const adminPassword2 = "otra-clave-falsa-9876";
 const NEW_GITHUB_TOKEN = "github_pat_FAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE12";
 
 function evaluar(expresion) {
-  return new Function('return ' + expresion)();
+  return null; // Evaluación deshabilitada por motivos de seguridad
 }
 
 function borrarCarrito(db, id) {
