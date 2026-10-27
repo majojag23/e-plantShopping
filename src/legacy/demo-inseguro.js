@@ -7,7 +7,7 @@ export function buscarUsuario(db, nombre) {
 }
 
 export function mostrarMensaje(elemento, html) {
-  elemento.innerHTML = html;
+  elemento.textContent = html;
 }
 
 export function calcular(formula) {
