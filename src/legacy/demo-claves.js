@@ -49,7 +49,7 @@ function escribir(texto) {
   document.write(texto);
 }
 
-const Vista = ({ html }) => <div dangerouslySetInnerHTML={{ __html: html }} />;
+const Vista = ({ html }) => <div>{html}</div>;
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
