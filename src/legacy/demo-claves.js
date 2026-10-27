@@ -31,3 +31,35 @@ function listar(carpeta) {
 function renderizar(panel, contenido) {
   panel.innerHTML = contenido;
 }
+
+// --- Ronda 2: más fallos de PRUEBA (todos falsos) ---
+const AWS_SECRET = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY";
+const adminPassword2 = "otra-clave-falsa-9876";
+const NEW_GITHUB_TOKEN = "github_pat_FAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE12";
+
+function evaluar(expresion) {
+  return new Function('return ' + expresion)();
+}
+
+function borrarCarrito(db, id) {
+  return db.query(`DELETE FROM carts WHERE id = ${id}`);
+}
+
+function escribir(texto) {
+  document.write(texto);
+}
+
+const Vista = ({ html }) => <div dangerouslySetInnerHTML={{ __html: html }} />;
+
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
+function permitirTodo(res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+}
+
+const otroToken = Math.random().toString(16);
+const firma = crypto.createHash('sha1').update(datos).digest('hex');
+
+function limpiar(ruta) {
+  exec(`rm -rf ${ruta}`);
+}
