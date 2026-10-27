@@ -57,7 +57,7 @@ function permitirTodo(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
 }
 
-const otroToken = Math.random().toString(16);
+const otroToken = crypto.randomUUID();
 const firma = crypto.createHash('sha1').update(datos).digest('hex');
 
 function limpiar(ruta) {
