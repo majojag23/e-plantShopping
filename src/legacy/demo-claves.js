@@ -46,7 +46,7 @@ function borrarCarrito(db, id) {
 }
 
 function escribir(texto) {
-  document.write(texto);
+  document.body.appendChild(document.createTextNode(texto));
 }
 
 const Vista = ({ html }) => <div dangerouslySetInnerHTML={{ __html: html }} />;
