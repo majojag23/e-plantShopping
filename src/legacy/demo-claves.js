@@ -54,7 +54,7 @@ const Vista = ({ html }) => <div dangerouslySetInnerHTML={{ __html: html }} />;
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 function permitirTodo(res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Origin', 'https://myapp.com');
 }
 
 const otroToken = Math.random().toString(16);
