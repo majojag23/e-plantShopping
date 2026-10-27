@@ -1,5 +1,5 @@
 // Archivo de PRUEBA de DevSentinel. TODAS las claves son falsas; sirven solo para ejercitar el escáner.
-const GITHUB_TOKEN = "ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const STRIPE_KEY = "rk_live_FAKEFAKEFAKEFAKE1234";
 const GOOGLE_KEY = "AIzaSyFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE0";
 const SLACK_TOKEN = "xoxb-123456789012-FAKEFAKEFAKE";
